@@ -1,0 +1,269 @@
+me: Checklist.sh
+# Version: 1
+# Description: Tool to capture checklist from LINUX systems
+#
+# Platforms Supported: CentOS Linux
+######################################################################
+
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+echo "date;uptime" >> /home/infra.mg/checklist_output.txt
+date;uptime >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "hostname" >> /home/infra.mg/checklist_output.txt
+hostname >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "curl wgetip.com" >> /home/infra.mg/checklist_output.txt
+curl wgetip.com >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "w" >> /home/infra.mg/checklist_output.txt
+w >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "lastlog" >> /home/infra.mg/checklist_output.txt
+lastlog >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "last" >> /home/infra.mg/checklist_output.txt
+last >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "uname -a" >> /home/infra.mg/checklist_output.txt
+uname -a  >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "cat /etc/redhat-release " >> /home/infra.mg/checklist_output.txt
+cat /etc/redhat-release >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "cat /etc/issue" >> /home/infra.mg/checklist_output.txt
+cat /etc/issue >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "cat /etc/rack*" >> /home/infra.mg/checklist_output.txt
+cat /etc/rack* >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "dmidecode -t 1" >> /home/infra.mg/checklist_output.txt
+dmidecode -t 1 >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "mii-tool" >> /home/infra.mg/checklist_output.txt
+mii-tool >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "ifconfig" >> /home/infra.mg/checklist_output.txt
+ifconfig >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "route -n" >> /home/infra.mg/checklist_output.txt
+route -n >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "cat /etc/resolv.conf" >> /home/infra.mg/checklist_output.txt
+cat /etc/resolv.conf >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "cat /etc/hosts" >> /home/infra.mg/checklist_output.txt
+cat /etc/hosts >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "ls -la /etc/sysconfig/network-scripts/" >> /home/infra.mg/checklist_output.txt
+ls -la /etc/sysconfig/network-scripts/  >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "/etc/sysconfig/network-scripts/ifcfg-*" >> /home/infra.mg/checklist_output.txt
+cat /etc/sysconfig/network-scripts/ifcfg-*  >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "iscsiadm -m session" >> /home/infra.mg/checklist_output.txt
+iscsiadm -m session >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "multipath -ll" >> /home/infra.mg/checklist_output.txt
+multipath -ll >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "fdisk -l" >> /home/infra.mg/checklist_output.txt
+fdisk -l >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "df -h" >> /home/infra.mg/checklist_output.txt
+df -h >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "mount" >> /home/infra.mg/checklist_output.txt
+mount >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "cat /etc/fstab" >> /home/infra.mg/checklist_output.txt
+cat /etc/fstab >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "cat /etc/mtab" >> /home/infra.mg/checklist_output.txt
+cat /etc/mtab >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+echo "chkconfig --list |grep 3:on" >> /home/infra.mg/checklist_output.txt
+chkconfig --list |grep 3:on >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "chkconfig --list |grep 5:on" >> /home/infra.mg/checklist_output.txt
+chkconfig --list |grep 5:on >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "runlevel" >> /home/infra.mg/checklist_output.txt
+runlevel >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "cat /etc/sysconfig/iptables" >> /home/infra.mg/checklist_output.txt
+cat /etc/sysconfig/iptables >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "iptables -L -n" >> /home/infra.mg/checklist_output.txt
+iptables -L -n >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "cat /etc/hosts.allow" >> /home/infra.mg/checklist_output.txt
+cat /etc/hosts.allow  >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "cat /etc/hosts.deny" >> /home/infra.mg/checklist_output.txt
+cat /etc/hosts.deny  >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "uname -a" >> /home/infra.mg/checklist_output.txt
+uname -a >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "crontab -l" >> /home/infra.mg/checklist_output.txt
+crontab -l >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "cat /etc/network/interfaces" >> /home/infra.mg/checklist_output.txt
+cat /etc/network/interfaces >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "cat /etc/sysconfig/network" >> /home/infra.mg/checklist_output.txt
+cat /etc/sysconfig/network >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "ps -aux" >> /home/infra.mg/checklist_output.txt
+ps -aux >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "netstat -tunlp" >> /home/infra.mg/checklist_output.txt
+netstat -tunlp >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "ps -ef" >> /home/infra.mg/checklist_output.txt
+ps -ef >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "cat /etc/rc.local" >> /home/infra.mg/checklist_output.txt
+cat /etc/rc.local >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "cat /etc/inittab" >> /home/infra.mg/checklist_output.txt
+cat /etc/inittab  >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "cat /etc/lvm/lvm.conf" >> /home/infra.mg/checklist_output.txt
+cat /etc/lvm/lvm.conf >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "/etc/multipath.conf" >> /home/infra.mg/checklist_output.txt
+cat /etc/multipath.conf >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "pvdisplay" >> /home/infra.mg/checklist_output.txt
+pvdisplay >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "vgdisplay" >> /home/infra.mg/checklist_output.txt
+vgdisplay >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "lvdisplay" >> /home/infra.mg/checklist_output.txt
+lvdisplay >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "cat /var/log/messages | grep -i '(error|warning)" >> /home/infra.mg/checklist_output.txt
+cat /var/log/messages | grep -i '(error|warning)' >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "cat /etc/grub.conf" >> /home/infra.mg/checklist_output.txt
+cat /etc/grub.conf >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "ls -ltrh /boot/" >> /home/infra.mg/checklist_output.txt
+ls -ltrh /boot/ >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "lspci" >> /home/infra.mg/checklist_output.txt
+lspci >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "dmidecode" >> /home/infra.mg/checklist_output.txt
+dmidecode >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+
+echo "dmesg" >> /home/infra.mg/checklist_output.txt
+dmesg >> /home/infra.mg/checklist_output.txt
+echo "##########################################" >> /home/infra.mg/checklist_output.txt
+
+###############/etc/ folder backup###########################
+tar -czf /root/etc.backup.tar.gz /etc/
